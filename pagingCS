@@ -1,0 +1,35 @@
+
+    class RetrieveData
+    {
+        public NewPolicyViewModel ReturnREquiredData(int pageNumber, string exportCriteria)
+        {
+            NewPolicyViewModel pageViewData = new NewPolicyViewModel();
+            PolicyViewModel policieis;
+            List<PolicyViewModel> policy = new List<PolicyViewModel>()
+            {
+            policies = new PolicyViewModel()
+            {
+                clientName = "Client 1",
+                consultantName = "Consultant 1",
+                policyId = 10001
+            }
+            };
+
+            return pageViewData;
+        }
+    }
+
+
+    class NewPolicyViewModel
+    {
+        public List<PolicyViewModel> policiesList;
+        public int policyCount { get; set; }
+    }
+
+
+    class PolicyViewModel
+    {
+        public string clientName { get; set; }
+        public string consultantName { get; set; }
+        public int policyId { get; set; }
+    }
